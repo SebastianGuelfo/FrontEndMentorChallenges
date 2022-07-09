@@ -1,42 +1,82 @@
-
-
-body{
-
-
-
-  
+body {
+  box-sizing: border-box;
   font-family: 'Fraunces', serif;
   font-family: 'Montserrat', sans-serif;
-}
-
-@media(max-width:480px)  {
-  body{background-color: hsl(30, 38%, 92%);
   display: flex;
-  flex-direction: column,center;
+  height: 100vh;
+}
+
+@media(max-width:480px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
-  .background{
-    margin: 3% 2%;
-    padding: 3%  2%;
-      border-radius: 4%;
+
+  .background {
+    padding: 5%;
+
   }
-.content{
-  background-color: hsl(0, 0%, 100%);
-  padding: 4% 3%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+
+
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+
+
+  }
+
+
+  
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    height: 180PX;
+    
+    align-items: center;
+    justify-content: center;
+
+
+
+  }
+
+  .image {
+    position: absolute;
+    width: inherit;
+    
+
+
+
+  }
+
+
+
 
 }
-.image-container{
-  height: 5%;
-  width: auto;
-}
-.image{
-  
-  height: 5%;
-  width: auto;
-  
-}
-}
+
 
 @media (min-width:481px) {
- 
- body{ background-color: blue;}
+
+  body {
+    background-color: blue;
+  }
 }
