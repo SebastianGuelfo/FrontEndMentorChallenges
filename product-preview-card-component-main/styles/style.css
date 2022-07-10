@@ -1,27 +1,122 @@
 body {
   box-sizing: border-box;
-  font-family: 'Fraunces', serif;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   height: 100vh;
+  background-color: hsl(30, 38%, 92%);
 }
+
+
+.card{
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+  .background {
+    padding: 5%;
+
+  }
+    .product-info {
+    padding: 3%;
+  }
+
+  .product-type {
+    opacity: 50%;
+    margin: 4% 0;
+
+    letter-spacing: .2rem;
+    justify-content: left;
+    text-transform: capitalize;
+    font-size: 1.1REM;
+  }
+
+  .product-name {
+
+    margin: 4% 0;
+
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+  }
+
+  .description-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    opacity: 50%;
+
+    margin: 4% 0 8%;
+  }
+
+  .price-container{
+    display: flex;
+    vertical-align: auto;
+    justify-content: center;
+  align-items: center;
+  }
+  .price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .price:nth-last-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: #000;
+    opacity: 50%;
+    font-size: 13px;
+    display: inline-block;
+    margin: auto;
+    margin-left: 5%;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .btn {
+
+    justify-content: center;
+    text-align: center;
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color: #ffff;
+    border: none;
+    border-radius: 15px;
+    padding: 7%;
+    margin: 4% 0 3%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .btn:active {
+    background-color: hsl(212, 21%, 14%);
+
+  }
+
+  .btn-icon {
+    color: #ffff;
+    font-size: 14px;
+
+  }
 
 @media(max-width:480px) {
   body {
-    background-color: hsl(30, 38%, 92%);
-    display: flex;
+
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
   }
 
-  .background {
-    padding: 5%;
 
-  }
 
   .card {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +125,11 @@ body {
     overflow: hidden;
 
 
-    border-radius: 20px;
-    background-color: hsl(0, 0%, 100%);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-
-
-
+   
   }
 
 
-  
+/*img div and img component for small devices*/
 
   .image-container {
     display: flex;
@@ -50,8 +139,8 @@ body {
     margin: auto;
     width: 100%;
     overflow: hidden;
-    height: 180PX;
-    
+    height: 250PX;
+    padding-top: 3%;
     align-items: center;
     justify-content: center;
 
@@ -62,14 +151,7 @@ body {
   .image {
     position: absolute;
     width: inherit;
-    
-
-
-
   }
-
-
-
 
 }
 
