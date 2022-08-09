@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.button {
+	font-family: inherit;
+	background-color: #000;
+	color: #fff;
+	border-radius: 15px;
+	padding: 5%;
+	border: none;
+	transition: 0.3s;
+	&:active {
+		background-color: #fafafa;
+	}
+}

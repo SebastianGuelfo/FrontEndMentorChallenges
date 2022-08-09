@@ -1,0 +1,11 @@
+@use "../abstracts/" as a;
+
+* {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+body {
+	font-family: "Epilogue", sans-serif;
+	font-size: rem(18);
+}

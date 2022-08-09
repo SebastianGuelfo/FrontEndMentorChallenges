@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+main {
+	text-align: center;
+}
+h1 {
+	font-size: rem(34);
+	font-weight: 700;
+}
+p {
+	font-size: rem(16);
+	color: hsla(0, 0%, 0%, 0.6);
+	line-height: 1.45;
+}

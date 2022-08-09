@@ -1,0 +1,26 @@
+@use "../abstracts" as a;
+
+.navbar {
+	margin: 2%;
+	padding: 2% 3%;
+	display: flex;
+	@include a.breakpoint-down("large") {
+		justify-content: space-between;
+
+		&__items-container {
+			display: block;
+			ul {
+				display: none;
+			}
+		}
+	}
+	@include a.breakpoint-down("medium") {
+		&__items-container {
+			display: none;
+		}
+	}
+
+	@include a.breakpoint-down("small") {
+		background-color: yellow;
+	}
+}
